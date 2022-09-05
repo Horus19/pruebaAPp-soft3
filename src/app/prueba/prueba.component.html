@@ -1,0 +1,9 @@
+<form action="" [formGroup]="formPublicacion">
+    <input type="text" formControlName="titulo" placeholder="titulo">
+    <input type="text" formControlName="descripcion" placeholder="descripcion">
+    <input type="text" formControlName="precio" placeholder="precio">
+    <input type="text" formControlName="municipio" placeholder="municipio">
+    <input type="file" formControlName="imagen" (change)="toBlod64($event)">
+    <button (click)="guardar()">Guardar</button>
+        
+</form>
